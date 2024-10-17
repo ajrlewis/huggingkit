@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hugginkit"
+version = "0.1.0"
+description = "A collection of Hugging Face utilities."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "ajrlewis", email = "hello@ajrlewis.com" }
+]
+dependencies = [
+    "loguru"==0.7.2,
+    "huggingface-hub"==0.25.2,
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
