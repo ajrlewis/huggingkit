@@ -1,8 +1,8 @@
 from loguru import logger
 
 from client import get_client
-import chat
-import prompt_templates
+from . import chat
+from . import prompt_templates
 
 
 repo_id = "meta-llama/Meta-Llama-3-8B-Instruct"

@@ -1,7 +1,7 @@
 from huggingface_hub import InferenceClient
 from loguru import logger
 
-import prompt_templates
+from . import prompt_templates
 
 
 def completion(
